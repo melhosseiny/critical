@@ -1,8 +1,6 @@
 import { DOMParser, Element } from "https://deno.land/x/deno_dom/deno-dom-wasm.ts";
 import * as esbuild from "https://deno.land/x/esbuild@v0.12.24/mod.js";
 
-console.log(Deno.args);
-
 const index = await Deno.readTextFile(Deno.args[0]);
 const dom_parser = new DOMParser();
 const doc = dom_parser.parseFromString(index, 'text/html');
