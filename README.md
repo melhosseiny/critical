@@ -1,6 +1,6 @@
 # critical
 
-Inline [critical CSS](https://web.dev/extract-critical-css/) in your index.html to avoid FOUC
+Inline [critical CSS](https://web.dev/extract-critical-css/) in your `index.html` to avoid FOUC
 
 ## Usage
 
