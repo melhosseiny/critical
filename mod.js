@@ -3,7 +3,7 @@ import * as esbuild from "https://deno.land/x/esbuild@v0.24.0/mod.js";
 import { parseArgs } from "jsr:@std/cli";
 
 const args = parseArgs(Deno.args);
-const { _: [index] , port } = args;
+const { _: [index] , port = 8000 } = args;
 const index_str = await Deno.readTextFile(index);
 const dom_parser = new DOMParser();
 const doc = dom_parser.parseFromString(index_str, 'text/html');
