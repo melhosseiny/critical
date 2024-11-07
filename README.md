@@ -2,6 +2,11 @@
 
 Inline [critical CSS](https://web.dev/extract-critical-css/) in your `index.html` to avoid FOUC
 
-## Usage
+## Install
 
-    deno run --allow-net --allow-env --allow-run --allow-read --allow-write https://raw.githubusercontent.com/melhosseiny/critical/main/mod.js index.html
+    deno install -g -N -E -R -W --allow-run -n critical mod.js
+
+## Use
+
+    critical index.html
+    critical --port 8000 index.html
